@@ -1,0 +1,988 @@
+{
+    "questions": [
+      {
+        "type": "qcm",
+        "question": "Quel est le plus long fleuve du monde ?",
+        "choices": [
+          "Nil",
+          "Amazone",
+          "Yangtsé",
+          "Mississippi"
+        ],
+        "answer": "Amazone",
+        "anecdote": "L’Amazone est souvent considéré comme le plus long fleuve du monde, même devant le Nil, selon certaines mesures modernes."
+      },
+      {
+        "type": "text",
+        "question": "En quelle année a eu lieu la chute du mur de Berlin ?",
+        "answer": "1989",
+        "anecdote": "Le mur est tombé en novembre 1989, marquant la fin symbolique de la guerre froide."
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la capitale de l’Australie ?",
+        "choices": [
+          "Sydney",
+          "Melbourne",
+          "Canberra",
+          "Brisbane"
+        ],
+        "answer": "Canberra",
+        "anecdote": "Canberra a été choisie comme compromis entre Sydney et Melbourne, deux grandes rivales."
+      },
+      {
+        "type": "text",
+        "question": "Qui a peint la Joconde ?",
+        "answer": "Léonard de Vinci",
+        "anecdote": "Léonard de Vinci a peint la Joconde au XVIe siècle ; elle est aujourd’hui exposée au musée du Louvre à Paris."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de continents existe-t-il ?",
+        "choices": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "answer": "7",
+        "anecdote": "Il y a 7 continents : Afrique, Amérique du Nord, Amérique du Sud, Antarctique, Asie, Europe, Océanie."
+      },
+      {
+        "type": "text",
+        "question": "Quel est le symbole chimique de l’or ?",
+        "answer": "Au",
+        "anecdote": "Le symbole 'Au' vient du latin 'Aurum' signifiant 'or'."
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l’auteur de '1984' ?",
+        "choices": [
+          "Aldous Huxley",
+          "George Orwell",
+          "Ray Bradbury",
+          "Isaac Asimov"
+        ],
+        "answer": "George Orwell",
+        "anecdote": "George Orwell a écrit '1984' en 1949 comme une critique du totalitarisme."
+      },
+      {
+        "type": "text",
+        "question": "Quelle est la planète la plus proche du Soleil ?",
+        "answer": "Mercure",
+        "anecdote": "Mercure, la plus proche du Soleil, met seulement 88 jours à faire le tour de celui-ci."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de pattes a une araignée ?",
+        "choices": [
+          "6",
+          "8",
+          "10",
+          "12"
+        ],
+        "answer": "8",
+        "anecdote": "Les araignées font partie des arachnides, qui ont toutes 8 pattes."
+      },
+      {
+        "type": "text",
+        "question": "Dans quel pays se trouve la ville de Marrakech ?",
+        "answer": "Maroc",
+        "anecdote": "Marrakech est l'une des quatre villes impériales du Maroc, célèbre pour sa médina et ses souks."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "10",
+          "11",
+          "12",
+          "9"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l’élément chimique dont le symbole est Fe ?",
+        "answer": "Fer",
+        "anecdote": "Le symbole 'Fe' vient du latin 'Ferrum' pour le fer.",
+        "choices": [
+          "Fluor",
+          "Francium",
+          "Fer",
+          "Phosphore"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la langue la plus parlée dans le monde ?",
+        "answer": "Chinois mandarin",
+        "anecdote": "Le chinois mandarin est parlé par plus d'un milliard de personnes.",
+        "choices": [
+          "Espagnol",
+          "Chinois mandarin",
+          "Anglais",
+          "Arabe"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Quel instrument mesure la pression atmosphérique ?",
+        "answer": "Baromètre",
+        "anecdote": "Le baromètre est utilisé pour mesurer la pression de l’air."
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Londres",
+          "Rome",
+          "Berlin",
+          "Paris"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "11",
+          "12",
+          "9",
+          "10"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "5",
+          "6",
+          "8",
+          "7"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Quel instrument mesure la pression atmosphérique ?",
+        "answer": "Baromètre",
+        "anecdote": "Le baromètre est utilisé pour mesurer la pression de l’air."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "11",
+          "10",
+          "12",
+          "9"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Dans quel pays le Mont Fuji se situe-t-il ?",
+        "answer": "Japon",
+        "anecdote": "Le Mont Fuji est le plus haut sommet du Japon."
+      },
+      {
+        "type": "text",
+        "question": "Dans quel pays le Mont Fuji se situe-t-il ?",
+        "answer": "Japon",
+        "anecdote": "Le Mont Fuji est le plus haut sommet du Japon."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "7",
+          "5",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Quelle est la formule chimique de l'eau ?",
+        "answer": "H2O",
+        "anecdote": "La formule H2O signifie que chaque molécule d'eau est composée de deux atomes d'hydrogène et un d'oxygène."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "9",
+          "10",
+          "12",
+          "11"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Atlantique",
+          "Indien",
+          "Pacifique",
+          "Arctique"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la langue la plus parlée dans le monde ?",
+        "answer": "Chinois mandarin",
+        "anecdote": "Le chinois mandarin est parlé par plus d'un milliard de personnes.",
+        "choices": [
+          "Arabe",
+          "Espagnol",
+          "Anglais",
+          "Chinois mandarin"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Dans quel pays le Mont Fuji se situe-t-il ?",
+        "answer": "Japon",
+        "anecdote": "Le Mont Fuji est le plus haut sommet du Japon."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "5",
+          "8",
+          "6",
+          "7"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Dans quel pays le Mont Fuji se situe-t-il ?",
+        "answer": "Japon",
+        "anecdote": "Le Mont Fuji est le plus haut sommet du Japon."
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Londres",
+          "Berlin",
+          "Rome",
+          "Paris"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "10",
+          "9",
+          "12",
+          "11"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "8",
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Arctique",
+          "Pacifique",
+          "Indien",
+          "Atlantique"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "8",
+          "7",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Berlin",
+          "Rome",
+          "Paris",
+          "Londres"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "10",
+          "12",
+          "9",
+          "11"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l’élément chimique dont le symbole est Fe ?",
+        "answer": "Fer",
+        "anecdote": "Le symbole 'Fe' vient du latin 'Ferrum' pour le fer.",
+        "choices": [
+          "Fer",
+          "Fluor",
+          "Francium",
+          "Phosphore"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la langue la plus parlée dans le monde ?",
+        "answer": "Chinois mandarin",
+        "anecdote": "Le chinois mandarin est parlé par plus d'un milliard de personnes.",
+        "choices": [
+          "Anglais",
+          "Arabe",
+          "Chinois mandarin",
+          "Espagnol"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Atlantique",
+          "Indien",
+          "Arctique",
+          "Pacifique"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Rome",
+          "Berlin",
+          "Londres",
+          "Paris"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la langue la plus parlée dans le monde ?",
+        "answer": "Chinois mandarin",
+        "anecdote": "Le chinois mandarin est parlé par plus d'un milliard de personnes.",
+        "choices": [
+          "Arabe",
+          "Anglais",
+          "Espagnol",
+          "Chinois mandarin"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Quelle est la formule chimique de l'eau ?",
+        "answer": "H2O",
+        "anecdote": "La formule H2O signifie que chaque molécule d'eau est composée de deux atomes d'hydrogène et un d'oxygène."
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Atlantique",
+          "Arctique",
+          "Pacifique",
+          "Indien"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "6",
+          "5",
+          "7",
+          "8"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l’élément chimique dont le symbole est Fe ?",
+        "answer": "Fer",
+        "anecdote": "Le symbole 'Fe' vient du latin 'Ferrum' pour le fer.",
+        "choices": [
+          "Phosphore",
+          "Francium",
+          "Fer",
+          "Fluor"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Pacifique",
+          "Arctique",
+          "Atlantique",
+          "Indien"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "text",
+        "question": "Quelle est la formule chimique de l'eau ?",
+        "answer": "H2O",
+        "anecdote": "La formule H2O signifie que chaque molécule d'eau est composée de deux atomes d'hydrogène et un d'oxygène."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "9",
+          "10",
+          "12",
+          "11"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Quel instrument mesure la pression atmosphérique ?",
+        "answer": "Baromètre",
+        "anecdote": "Le baromètre est utilisé pour mesurer la pression de l’air."
+      },
+      {
+        "type": "text",
+        "question": "Quelle est la formule chimique de l'eau ?",
+        "answer": "H2O",
+        "anecdote": "La formule H2O signifie que chaque molécule d'eau est composée de deux atomes d'hydrogène et un d'oxygène."
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la langue la plus parlée dans le monde ?",
+        "answer": "Chinois mandarin",
+        "anecdote": "Le chinois mandarin est parlé par plus d'un milliard de personnes.",
+        "choices": [
+          "Chinois mandarin",
+          "Arabe",
+          "Espagnol",
+          "Anglais"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Paris",
+          "Berlin",
+          "Londres",
+          "Rome"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Indien",
+          "Atlantique",
+          "Arctique",
+          "Pacifique"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "5",
+          "6",
+          "8",
+          "7"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "7",
+          "5",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Dans quel pays le Mont Fuji se situe-t-il ?",
+        "answer": "Japon",
+        "anecdote": "Le Mont Fuji est le plus haut sommet du Japon."
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la langue la plus parlée dans le monde ?",
+        "answer": "Chinois mandarin",
+        "anecdote": "Le chinois mandarin est parlé par plus d'un milliard de personnes.",
+        "choices": [
+          "Espagnol",
+          "Chinois mandarin",
+          "Arabe",
+          "Anglais"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Quelle est la formule chimique de l'eau ?",
+        "answer": "H2O",
+        "anecdote": "La formule H2O signifie que chaque molécule d'eau est composée de deux atomes d'hydrogène et un d'oxygène."
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la langue la plus parlée dans le monde ?",
+        "answer": "Chinois mandarin",
+        "anecdote": "Le chinois mandarin est parlé par plus d'un milliard de personnes.",
+        "choices": [
+          "Espagnol",
+          "Anglais",
+          "Arabe",
+          "Chinois mandarin"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la langue la plus parlée dans le monde ?",
+        "answer": "Chinois mandarin",
+        "anecdote": "Le chinois mandarin est parlé par plus d'un milliard de personnes.",
+        "choices": [
+          "Arabe",
+          "Anglais",
+          "Espagnol",
+          "Chinois mandarin"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l’élément chimique dont le symbole est Fe ?",
+        "answer": "Fer",
+        "anecdote": "Le symbole 'Fe' vient du latin 'Ferrum' pour le fer.",
+        "choices": [
+          "Phosphore",
+          "Fer",
+          "Francium",
+          "Fluor"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "10",
+          "9",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "12",
+          "11",
+          "9",
+          "10"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Berlin",
+          "Rome",
+          "Paris",
+          "Londres"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Arctique",
+          "Atlantique",
+          "Indien",
+          "Pacifique"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Londres",
+          "Rome",
+          "Berlin",
+          "Paris"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "11",
+          "12",
+          "10",
+          "9"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Dans quel pays le Mont Fuji se situe-t-il ?",
+        "answer": "Japon",
+        "anecdote": "Le Mont Fuji est le plus haut sommet du Japon."
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Londres",
+          "Berlin",
+          "Paris",
+          "Rome"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "6",
+          "8",
+          "7",
+          "5"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l’élément chimique dont le symbole est Fe ?",
+        "answer": "Fer",
+        "anecdote": "Le symbole 'Fe' vient du latin 'Ferrum' pour le fer.",
+        "choices": [
+          "Fluor",
+          "Francium",
+          "Fer",
+          "Phosphore"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Berlin",
+          "Rome",
+          "Londres",
+          "Paris"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l’élément chimique dont le symbole est Fe ?",
+        "answer": "Fer",
+        "anecdote": "Le symbole 'Fe' vient du latin 'Ferrum' pour le fer.",
+        "choices": [
+          "Phosphore",
+          "Francium",
+          "Fer",
+          "Fluor"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Indien",
+          "Arctique",
+          "Atlantique",
+          "Pacifique"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l’élément chimique dont le symbole est Fe ?",
+        "answer": "Fer",
+        "anecdote": "Le symbole 'Fe' vient du latin 'Ferrum' pour le fer.",
+        "choices": [
+          "Francium",
+          "Fluor",
+          "Fer",
+          "Phosphore"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle est la langue la plus parlée dans le monde ?",
+        "answer": "Chinois mandarin",
+        "anecdote": "Le chinois mandarin est parlé par plus d'un milliard de personnes.",
+        "choices": [
+          "Chinois mandarin",
+          "Espagnol",
+          "Arabe",
+          "Anglais"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est l’élément chimique dont le symbole est Fe ?",
+        "answer": "Fer",
+        "anecdote": "Le symbole 'Fe' vient du latin 'Ferrum' pour le fer.",
+        "choices": [
+          "Fer",
+          "Francium",
+          "Fluor",
+          "Phosphore"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "text",
+        "question": "Quel instrument mesure la pression atmosphérique ?",
+        "answer": "Baromètre",
+        "anecdote": "Le baromètre est utilisé pour mesurer la pression de l’air."
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Pacifique",
+          "Atlantique",
+          "Indien",
+          "Arctique"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Arctique",
+          "Indien",
+          "Pacifique",
+          "Atlantique"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Quel instrument mesure la pression atmosphérique ?",
+        "answer": "Baromètre",
+        "anecdote": "Le baromètre est utilisé pour mesurer la pression de l’air."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien de côtés a un hexagone ?",
+        "answer": "6",
+        "anecdote": "Un hexagone a six côtés.",
+        "choices": [
+          "8",
+          "7",
+          "6",
+          "5"
+        ]
+      },
+      {
+        "type": "qcm",
+        "question": "Quelle ville est surnommée la Ville Lumière ?",
+        "answer": "Paris",
+        "anecdote": "Paris est surnommée la Ville Lumière pour son rayonnement intellectuel et artistique.",
+        "choices": [
+          "Berlin",
+          "Paris",
+          "Rome",
+          "Londres"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Dans quel pays le Mont Fuji se situe-t-il ?",
+        "answer": "Japon",
+        "anecdote": "Le Mont Fuji est le plus haut sommet du Japon."
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "text",
+        "question": "Dans quel pays le Mont Fuji se situe-t-il ?",
+        "answer": "Japon",
+        "anecdote": "Le Mont Fuji est le plus haut sommet du Japon."
+      },
+      {
+        "type": "qcm",
+        "question": "Combien y a-t-il de joueurs dans une équipe de football (hors remplaçants) ?",
+        "answer": "11",
+        "anecdote": "Une équipe de football se compose de 11 joueurs titulaires.",
+        "choices": [
+          "10",
+          "12",
+          "9",
+          "11"
+        ]
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "text",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "answer": "Victor Hugo",
+        "anecdote": "Victor Hugo a publié 'Les Misérables' en 1862."
+      },
+      {
+        "type": "qcm",
+        "question": "Quel est le plus grand océan du monde ?",
+        "answer": "Pacifique",
+        "anecdote": "L'océan Pacifique est le plus vaste, couvrant plus de 30% de la surface terrestre.",
+        "choices": [
+          "Pacifique",
+          "Indien",
+          "Arctique",
+          "Atlantique"
+        ]
+      }
+    ]
+  }
