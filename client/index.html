@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kultissimo - Jeu de culture générale</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e88e5;
+    }
+
+    input, button {
+      padding: 0.5rem;
+      margin: 0.3rem;
+      font-size: 1rem;
+    }
+
+    #choices button {
+      display: block;
+      margin: 0.5rem 0;
+      width: 100%;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #scoreboard {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kultissimo 🎓</h1>
+
+  <div id="setup">
+    <input id="pseudo" placeholder="Votre pseudo">
+    <br>
+    <button onclick="createRoom()">Créer une partie</button>
+    <br><br>
+    <input id="roomToJoin" placeholder="Code de la partie">
+    <br>
+    <button onclick="joinRoom()">Rejoindre</button>
+  </div>
+
+  <div id="game" class="hidden">
+    <h2 id="question"></h2>
+    <div id="choices"></div>
+    <input id="textAnswer" class="hidden" placeholder="Tapez votre réponse">
+    <br>
+    <button onclick="submitAnswer()">Valider</button>
+  </div>
+
+  <div id="scoreboard" class="hidden">
+    <h3>🎉 Fin de la partie ! Résultats :</h3>
+    <ul id="scores"></ul>
+  </div>
+
+  <!-- Socket.IO et script -->
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
