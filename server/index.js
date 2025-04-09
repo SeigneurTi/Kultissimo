@@ -1,3 +1,4 @@
+// server/index.js - Kultissimo backend complet avec lobby, timer, anecdote
 const express = require("express");
 const http = require("http");
 const { Server } = require("socket.io");
@@ -12,84 +13,116 @@ const questions = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../questions/questions.json"))
 );
 
-let rooms = {}; // Stockage en mémoire des parties
+let rooms = {};
 
 app.use(express.static(path.join(__dirname, "../client")));
 
 io.on("connection", (socket) => {
-  console.log("✅ Un joueur est connecté :", socket.id);
+  console.log("✅ Un joueur est connecté:", socket.id);
 
-  // Création d'une partie
   socket.on("create_room", (pseudo) => {
     const roomId = Math.random().toString(36).substring(2, 8);
     socket.join(roomId);
     rooms[roomId] = {
-      players: [{ id: socket.id, pseudo, score: 0 }],
+      ownerId: socket.id,
+      players: [{ id: socket.id, pseudo, score: 0, hasAnswered: false }],
       currentQuestion: 0,
-      usedQuestions: []
+      usedQuestions: [],
+      currentQuestionObj: null,
+      timeoutId: null
     };
     socket.emit("room_created", roomId);
+    io.to(roomId).emit("player_list", rooms[roomId].players);
   });
 
-  // Rejoindre une partie
   socket.on("join_room", ({ roomId, pseudo }) => {
     const room = rooms[roomId];
     if (!room) return socket.emit("error", "Room not found");
     socket.join(roomId);
-    room.players.push({ id: socket.id, pseudo, score: 0 });
+    room.players.push({ id: socket.id, pseudo, score: 0, hasAnswered: false });
     io.to(roomId).emit("player_list", room.players);
   });
 
-  // Démarrage de la partie
   socket.on("start_game", (roomId) => {
+    const room = rooms[roomId];
+    if (!room || socket.id !== room.ownerId) return;
     sendQuestion(roomId);
   });
 
-  // Réception de réponse
   socket.on("submit_answer", ({ roomId, answer }) => {
     const room = rooms[roomId];
     if (!room || !room.currentQuestionObj) return;
 
-    const question = room.currentQuestionObj;
-    const player = room.players.find((p) => p.id === socket.id);
+    const player = room.players.find(p => p.id === socket.id);
+    if (!player || player.hasAnswered) return;
+    player.hasAnswered = true;
 
+    const question = room.currentQuestionObj;
     const correct =
       (question.type === "qcm" && answer === question.answer) ||
-      (question.type === "text" &&
-        answer.trim().toLowerCase() === question.answer.trim().toLowerCase());
+      (question.type === "text" && answer.trim().toLowerCase() === question.answer.trim().toLowerCase());
 
     if (correct) player.score++;
 
-    socket.emit("answer_result", { correct });
+    socket.emit("answer_result", {
+      correct,
+      anecdote: question.anecdote || "Pas d'anecdote disponible."
+    });
 
-    // Avancer à la question suivante
-    room.currentQuestion++;
-    if (room.currentQuestion < 10) {
-      sendQuestion(roomId);
-    } else {
-      io.to(roomId).emit("game_over", room.players);
+    // Si tous les joueurs ont répondu
+    if (room.players.every(p => p.hasAnswered)) {
+      clearTimeout(room.timeoutId);
+      proceedToNext(roomId);
     }
   });
 });
 
-// Envoi de la prochaine question
 function sendQuestion(roomId) {
   const room = rooms[roomId];
   if (!room) return;
 
   const available = questions.questions.filter(
-    (q) => !room.usedQuestions.includes(q.question)
+    q => !room.usedQuestions.includes(q.question)
   );
   const next = available[Math.floor(Math.random() * available.length)];
 
   room.currentQuestionObj = next;
   room.usedQuestions.push(next.question);
+  room.players.forEach(p => p.hasAnswered = false);
 
   io.to(roomId).emit("new_question", next);
+
+  room.timeoutId = setTimeout(() => {
+    proceedToNext(roomId);
+  }, 10000); // 10 sec
 }
 
-// Démarrage du serveur
+function proceedToNext(roomId) {
+  const room = rooms[roomId];
+  if (!room) return;
+
+  // Envoyer une dernière fois les anecdotes à ceux qui n'ont pas répondu
+  room.players.forEach(p => {
+    if (!p.hasAnswered) {
+      io.to(p.id).emit("answer_result", {
+        correct: false,
+        anecdote: room.currentQuestionObj.anecdote || "Pas d'anecdote disponible."
+      });
+    }
+  });
+
+  setTimeout(() => {
+    room.currentQuestion++;
+    if (room.currentQuestion < 10) {
+      sendQuestion(roomId);
+    } else {
+      io.to(roomId).emit("game_over", room.players);
+      delete rooms[roomId];
+    }
+  }, 5000); // 5 sec d'anecdote
+}
+
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, "0.0.0.0", () =>
-  console.log(`🚀 Serveur Kultissimo en ligne sur le port ${PORT}`)
+  console.log(`🚀 Kultissimo en ligne sur le port ${PORT}`)
 );

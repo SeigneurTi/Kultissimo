@@ -34,7 +34,7 @@
       display: none;
     }
 
-    #scoreboard {
+    #scoreboard, #lobby {
       margin-top: 2rem;
     }
   </style>
@@ -49,7 +49,20 @@
     <br><br>
     <input id="roomToJoin" placeholder="Code de la partie">
     <br>
-    <button onclick="joinRoom()">Rejoindre</button>
+    <button onclick="goToJoinLobby()">Rejoindre</button>
+  </div>
+
+  <div id="joinLobby" class="hidden">
+    <input id="pseudoJoin" placeholder="Votre pseudo">
+    <br>
+    <button onclick="joinRoom()">Rejoindre la partie</button>
+  </div>
+
+  <div id="lobby" class="hidden">
+    <h2>Lobby de la partie</h2>
+    <p>Code : <strong id="lobbyCode"></strong></p>
+    <ul id="playerList"></ul>
+    <button id="startGameBtn" onclick="startGame()">Lancer la partie</button>
   </div>
 
   <div id="game" class="hidden">
@@ -58,6 +71,8 @@
     <input id="textAnswer" class="hidden" placeholder="Tapez votre réponse">
     <br>
     <button onclick="submitAnswer()">Valider</button>
+    <p id="timer"></p>
+    <p id="anecdote" class="hidden"></p>
   </div>
 
   <div id="scoreboard" class="hidden">
